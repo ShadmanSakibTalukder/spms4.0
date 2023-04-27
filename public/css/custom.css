@@ -1,0 +1,149 @@
+
+:root {
+    --pc: #2E0F59;
+    --lc: #009FD6;
+    --pc-g: linear-gradient(180deg, #391158 9.9%, #210D59 100%);
+    --sc: #555555;
+    --sc2: #333333;
+    --wc: #ffffff;
+    --gc: #A7A7A7;
+    --bc: #000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pc);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 26px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pc);
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--pc);
+}
+
+button {
+    border: none;
+}
+.a:hover{
+   transition: .3s;
+}
+.custom-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    background: var(--pc);
+    color: var(--wc);
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin-right: 10px;
+}
+.custom-btn:hover{
+    color: var(--wc);
+}
+.custom-btn img{
+    width: 20px;
+    margin-left: 5px;
+}
+.custom-btn2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    background: var(--wc);
+    color: var(--pc);
+    border-radius: 30px;
+    padding: 14px 25px;
+    border: 1px solid var(--pc);
+}
+/*
+.section-title h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--pc2);
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
+*/
+.section-title h4 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--pc);
+}
+.section-title p{
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--sc);
+}
+
+.section-title .after::after{
+    content: '';
+    height: 1px;
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+    margin:  0 auto;
+    background: var(--sc);
+    margin-top: 20px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--gc);
+    padding-bottom: 5px;
+}
+
+.custom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.custom-row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.page-head-section{
+    background: #E7EEFE;
+}
+
+

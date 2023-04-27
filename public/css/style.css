@@ -1,0 +1,725 @@
+@import "custom.css";
+
+/*HEADER*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    transition: .4s;
+    background: var(--pc-g);
+}
+
+.logo-image a img {
+    width: 60px;
+    padding: 3px 0;
+}
+
+.logo.menubar-mobile {
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: 18px;
+    color: var(--wc);
+}
+
+.menubar.right {
+    margin-left: 50px;
+}
+
+.menubar ul {
+    text-align: left;
+}
+
+.menubar > ul > li {
+    display: inline-block;
+}
+
+.menubar > ul > li > a {
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 6px 3px;
+    -webkit-transition: .3s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: var(--wc);
+    font-size: 12px;
+    line-height: 16px;
+    transition: .3s;
+}
+
+.menubar > ul > li > a:hover{
+    text-decoration: underline;
+}
+.menubar ul li a img {
+    width: 16px;
+    margin-right: 2px;
+}
+
+.menubar ul li a.login {
+    border: 1px solid var(--pc);
+}
+
+.menubar ul li a.login:hover {
+    background: var(--sc);
+    color: var(--wc);
+    border: 1px solid var(--sc);
+}
+
+.sub-btn {
+    position: relative;
+}
+
+.sub-btn:hover > a {
+    color: var(--wc);
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--wc);
+    width: 170px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 2px;
+}
+
+.sub-btn:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleY(100%);
+    -ms-transform: scaleY(100%);
+    transform: scaleY(100%);
+}
+
+.sub-menu a {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    font-weight: 700;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: var(--pc);
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+.sub-btn > a > i {
+    font-size: 14px !important;
+    margin-left: 5px;
+}
+
+.sub-menu a:hover {
+    background: var(--pc);
+    color: var(--wc) !important;
+}
+
+
+.sub-btn a span {
+    padding: 0 10px;
+}
+
+.sub-menu > ul > li > a > i {
+    float: right;
+    font-size: 14px !important;
+
+}
+
+.child-btn {
+    position: relative;
+}
+
+.child-btn:hover > a {
+    color: var(--sc);
+    background: var(--pc);
+}
+
+.child-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: var(--wc);
+    width: 170px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 2px;
+}
+
+.child-btn:hover .child-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleY(100%);
+    -ms-transform: scaleY(100%);
+    transform: scaleY(100%);
+}
+
+.menubar ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*HEADER END*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.mobile-logo img {
+
+    width: 100%;
+}
+
+header .mobile-icon {
+    color: var(--wc);
+    width: 300px;
+}
+
+.mobile-icon-center {
+    visibility: hidden;
+
+}
+
+
+.mobile-logo i:hover {
+    color: var(--sc);
+}
+
+.fa-bars {
+    color: var(--wc);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-size: 14px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    color: var(--pc);
+    font-weight: 700;
+    padding: 12px;
+}
+
+.custom.accordion-button:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-weight: 600;
+}
+
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+.none.accordion-button::after {
+    content: none;
+}
+
+.custom.accordion-body {
+    padding: 0 0px;
+}
+
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pc);
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.custom.accordion-body ul li:hover {
+    color: var(--wc);
+    background: var(--rc);
+}
+
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+
+.custom.accordion-item a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.custom.accordion-item .accordion-button {
+    display: block;
+    width: 100%;
+}
+
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+
+.custom.accordion-button:focus {
+    border: none;
+}
+
+/*ACCORDION CUSTOM END*/
+
+
+.mobile-menu {
+    width: 300px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 5;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    padding: 10px 0;
+}
+
+.mobile-logo i {
+    background: var(--sc);
+    float: right;
+    color: var(--wc);
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+
+.mobile-logo i:hover {
+    color: var(--wc);
+}
+
+
+
+
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(3, 19, 41, 0.71);
+    z-index: 4;
+    cursor: pointer;
+}
+
+.mobileAdd {
+    left: 0 !important;
+    width: 300px;
+}
+
+.mobile-overlay {
+    position: inherit !important;
+}
+
+.mobile-logo a img {
+    padding-left: 10px;
+    width: 90px;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+/*MOBILE MENU END*/
+
+
+/*HOME SECTION*/
+.home-section{
+    background: #155977;
+}
+.home-section img{
+    width: 100%;
+}
+/*HOME SECTION END*/
+
+/*COPYRIGHT*/
+.copyright-section {
+    background: #220D59;
+
+}
+
+.copyright-section .container {
+    border-top: 1px solid #4F2E83;
+}
+
+.copyright-content p {
+    color: #909AA8;
+    font-size: 15px;
+    margin: 0;
+}
+
+.copyright-left {
+    text-align: left;
+}
+
+.copyright-right {
+    text-align: right;
+}
+
+.copyright-right a {
+    color: #909AA8;
+    padding: 0px 10px;
+    border-left: 1px solid var(--wc);
+}
+
+.copyright-right a:first-child {
+    border-left: none;
+}
+
+.copyright-right a:last-child {
+    padding-right: 0;
+}
+
+/*COPYRIGHT END*/
+
+
+
+/*SIGNIN PAGE*/
+.signin-section{
+    background: #e6e6e6;
+}
+.signin-box h4{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.signin-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--wc);
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gc);
+}
+
+.signin-box input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--pc);
+    padding: 12px;
+    padding-left: 50px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.signin-box input::placeholder {
+    color: var(--gc);
+}
+
+.signin-box .forget-password a {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--sc);
+}
+.signin-box select{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--pc);
+    border-radius: 10px;
+    outline: none;
+}
+.signin-box label{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.signin-box .signin-btn button {
+    display: block;
+    width: 100%;
+    background: var(--pc-g);
+    color: var(--wc);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.signin-box .have-an-accound {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+.signin-box .have-an-accound a {
+    color: #6429E3;
+}
+
+.have-an-accound p {
+    color: var(--sc);
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.signin-box .nav-item button {
+    border: 1px solid #6429E3;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 8px;
+    padding: 5px 15px;
+    color: #6429E3;
+}
+
+.signin-box .nav-link.active {
+    background: #6429E3;
+}
+
+.trams-condation-check > input {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.trams-condation-check label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--sc);
+}
+
+.trams-condation-check label span {
+    color: var(--pc);
+
+}
+
+/*SIGNIN PAGE END*/
+
+
+
+/*HELP PAGE*/
+.contact-form {
+    padding-right: 30px;
+}
+
+.contact-form h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--sc2);
+    margin-bottom: 30px;
+}
+
+.contact-form input {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--sc);
+    background: #E7EEFE;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--sc);
+    background: #E7EEFE;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 100px;
+}
+
+.contact-form button {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--wc);
+    background: var(--pc);
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    border-left: 1px solid #CCCCCC;
+    padding-left: 50px;
+}
+
+.contact-info h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--sc);
+}
+
+.contact-info h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #D34E5C;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.contact-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--sc);
+    max-width: 278px;
+}
+
+.contact-info ul li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--sc);
+    padding: 10px 0;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+.contact-info ul li .contact-icon-f {
+    position: absolute;
+    left: 0;
+    width: 20px;
+}
+
+.contact-info .social-icons a i {
+    border: 1px solid var(--sc);
+    color: var(--sc);
+    margin-left: 10px;
+}
+
+.contact-info .social-icons a i:hover {
+    color: var(--wc);
+    border: 1px solid #D34E5C;
+    background: #D34E5C;
+}
+
+
+/*HELP PAGE END*/
+
+/*COURSE PERFORMANCE*/
+.course-performance{
+    background: #155977;
+}
+.course-performance-box{
+    background: var(--wc);
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    margin:  0 auto;
+}
+.course-performance-box label{
+    font-weight: 600;
+    color: var(--wc);
+}
+.course-performance-box input{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid var(--pc);
+    outline: none;
+}
+.course-performance-box button{
+    display: block;
+    width: 100%;
+    background: var(--sc);
+    color: var(--wc);
+    padding: 8px;
+    border-radius: 5px;
+}
+/*COURSE PERFORMANCE END*/
+
+.sub-menu button{
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
